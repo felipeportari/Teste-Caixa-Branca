@@ -1,18 +1,14 @@
-## Getting Started
+## Teste-Caixa-Branca
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+Este repositório é um exercício da matéria de Qualidade e Testes de Software.
 
-## Folder Structure
+## Métodos
+O código contém duas classes: Main e User. Por ser apenas uma conexão com banco de dados hipotética, o foco será apenas na classe User. É possivel observar que ela contém 2 metódos: um para conectar ao banco de dados (conectaBD()) e um para verificar se as credenciais do usuário estão corretas ou existem no banco (verificarUsuario())
 
-The workspace contains two folders by default, where:
+## Avaliação
 
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
+1. A query SQL no código está desorganizada devido à falta de espaços, identação e concatenação de strings, tornando ela difícil de ler e propensa a erros. Melhorar a estrutura da query aumentaria a legibilidade e reduziria erros.
 
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
+2. Os blocos "catch" vazios no código não tratam adequadamente os erros, tornando difícil identificar e resolver problemas, comprometendo a confiabilidade do programa. É importante adicionar tratamento de erros apropriado para depurar e lidar com falhas de maneira eficaz.
 
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
-
-## Dependency Management
-
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+3. 
