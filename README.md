@@ -17,3 +17,7 @@ O código contém duas classes: Main e User. Por ser apenas uma conexão com ban
 5. A arquitetura não foi bem definida.
 
 6. Não. A falta de fechamento de conexões pode resultar em esgotamento de recursos, impedindo novas conexões e afetando o aplicativo/app. Além disso, pode causar problemas de segurança, como exposição de informações sensíveis em conexões não encerradas.
+
+## Adicional
+
+7. Os blocos "catch" vazios no código não tratam adequadamente os erros, tornando difícil identificar e resolver problemas, comprometendo a confiabilidade do programa. É importante adicionar tratamento de erros apropriado para lidar melhor com falhas.
