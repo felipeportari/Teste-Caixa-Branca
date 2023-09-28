@@ -11,4 +11,6 @@ O código contém duas classes: Main e User. Por ser apenas uma conexão com ban
 
 2. Os blocos "catch" vazios no código não tratam adequadamente os erros, tornando difícil identificar e resolver problemas, comprometendo a confiabilidade do programa. É importante adicionar tratamento de erros apropriado para depurar e lidar com falhas de maneira eficaz.
 
-3. 
+3. Os nomes de algumas variáveis no código não são claros, dificultando a compreensão do propósito e do conteúdo de cada variável. Nomes mais descritivos e significativos tornariam o código mais legível e facilitariam a manutenção.
+
+4. A falta de fechamento de conexões pode resultar em esgotamento de recursos, impedindo novas conexões e afetando o aplicativo/app. Além disso, pode causar problemas de segurança, como exposição de informações sensíveis em conexões não encerradas.
