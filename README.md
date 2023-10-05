@@ -21,3 +21,20 @@ O código contém duas classes: Main e User. Por ser apenas uma conexão com ban
 ## Adicional
 
 7. Os blocos "catch" vazios no código não tratam adequadamente os erros, tornando difícil identificar e resolver problemas, comprometendo a confiabilidade do programa. É importante adicionar tratamento de erros apropriado para lidar melhor com falhas.
+
+## Grafo
+
+![Grafo](img/grafo.png)
+
+V(G) = 02 REGIÕES.
+V(G) = 10 ARESTAS.
+V(G) = 09 NÓS.
+CÁLCULO: V(G) = (ARESTAS – NÓS) + 2
+
+Cálculo: V(G) = (10 - 09) + 2 = 3
+
+## Sequências
+
+* 1;2;3;
+* 1;2;4;5;6;7;
+* 1;2;4;5;6;8;9;
