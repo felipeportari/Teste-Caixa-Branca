@@ -38,3 +38,7 @@ Cálculo: V(G) = (10 - 09) + 2 = 3
 * 1;2;3;
 * 1;2;4;5;6;7;
 * 1;2;4;5;6;8;9;
+
+  
+## Etapa 3
+Foram adicionados comentários no código para documentar o mesmo. A documentação de código é importante para explicar de forma clara o que um programa faz, como ele funciona e como as pessoas podem usá-lo. Isso ajuda os programadores a entenderem o código, torna mais fácil trabalhar juntos e possibilita usar o código novamente em outros projetos.

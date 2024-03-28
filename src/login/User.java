@@ -5,7 +5,19 @@ import java.sql.DriverManager;
 import java.sql.ResultSet;
 import java.sql.Statement;
 
+/**
+ * Essa é uma classe que simula o que seria um usuário real, simulando todas as
+ * conexões com o banco e verificações.
+ */
 public class User {
+
+    /**
+     * 
+     * Método responsável por efetuar a conexão com o banco.
+     * 
+     * @return Connection
+     */
+
     public Connection conectarBD() {
         Connection conn = null;
         try {
@@ -17,9 +29,25 @@ public class User {
         return conn;
     }
 
+    /**
+     * Nomedo usuário
+     */
+
     public String nome = "";
+
+    /**
+     * Retorna true se o nome do usuário existir. Senão, continua false.
+     */
     public boolean result = false;
 
+    /**
+     * Método responsável por verificar se o usuário existe no banco, verificando 
+     * se o login e senha são compatíveis.
+     * 
+     * @param login 
+     * @param senha 
+     * @return true se ambos forem compatíveis e false caso a combinação não exsita 
+     */
     public boolean verificarUsuario(String login, String senha) {
         String sql = "";
         Connection conn = conectarBD();
@@ -28,14 +56,15 @@ public class User {
         sql += "where login = " + "'" + login + "'";
         sql += " and senha = " + "'" + senha + "';";
 
-        try{
+        try {
             Statement st = conn.createStatement();
             ResultSet rs = st.executeQuery(sql);
-            if(rs.next()){
+            if (rs.next()) {
                 result = true;
                 nome = rs.getString("nome");
             }
-        }catch(Exception e){}
+        } catch (Exception e) {
+        }
 
         return result;
     }
